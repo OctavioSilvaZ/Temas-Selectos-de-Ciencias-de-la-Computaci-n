@@ -1,0 +1,173 @@
+/* Estilos Generales */
+body {
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #1f1e1e;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+footer a {
+    color: #26bfd3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00ffea;
+}
+
+/* Información del Perfil */
+.informacion-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.informacion-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #000000;
+}
+
+.perfil-info h1 {
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.perfil-info p {
+    font-size: 1.1rem;
+    color: #636060;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Secciones */
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #103c9b;
+    font-size: 1.75rem;
+    border-bottom: 2px solid #6d6d6d;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-group {
+    flex: 1;
+}
+
+h4 {
+    color: #2c1581;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+/* Listas */
+ul {
+    padding-left: 1.5rem; 
+    list-style-type:circle; 
+}
+
+ol {
+    padding-left: 1.5rem; 
+    list-style-type:decimal;
+}
+
+/* Estilos para <strong> y <em> */
+strong {
+    color: #d9534f; 
+    font-weight: 700;
+}
+
+em {
+    color: #06fff3;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1023px) {
+    .skills-columns {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .informacion-perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .informacion-perfil img {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-columns {
+        gap: 0.5rem;
+    }
+}
+
+/* Diseño para Impresión */
+@media print {
+    header, footer {
+        display: none;
+    }
+
+    section {
+        box-shadow: none;
+        background: #fff;
+    }
+
+    body {
+        color: #000;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+}
